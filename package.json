@@ -2,23 +2,32 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+    "start": "node app.js",
+    "app": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel-Kathiresan/Speed-Backend.git"
+  },
+  "author": "Daniel Kathiresan",
   "license": "ISC",
-  "proxy": "http://localhost:5000",
+  "bugs": {
+    "url": "https://github.com/Daniel-Kathiresan/Speed-Backend/issues"
+  },
+  "homepage": "https://github.com/Daniel-Kathiresan/Speed-Backend#readme",
   "dependencies": {
-    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.0",
+    "config": "^3.3.7",
     "cors": "^2.8.5",
     "express": "^4.18.1",
-    "mongoose": "^6.3.2"
+    "mongoose": "^6.3.3",
+    "validation": "^0.0.1"
   },
-  "engines": {
-    "node": "16.14.2"
-}
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }

@@ -7,22 +7,28 @@ const BookSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  isbn: {
+  authors: {
     type: String,
     required: true
   },
-  author: {
+  journal_name: {
     type: String,
     required: true
   },
-  description: {
+  content: {
     type: String
   },
-  published_date: {
+  publication_date: {
     type: Date
   },
-  publisher: {
-    type: String
+  volume: {
+    type: Number
+  },
+  number: {
+    type: Number
+  },
+  pages: {
+    type: Number
   },
   updated_date: {
     type: Date,

@@ -10,7 +10,7 @@
     "server": "nodemon app.js",
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
     "start": "npm run server"
-},
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Daniel-Kathiresan/Speed-Backend.git"
@@ -27,7 +27,9 @@
     "config": "^3.3.7",
     "cors": "^2.8.5",
     "express": "^4.18.1",
+    "mongodb": "^4.6.0",
     "mongoose": "^6.3.3",
+    "react-scripts": "^5.0.1",
     "validation": "^0.0.1"
   },
   "devDependencies": {

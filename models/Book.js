@@ -30,6 +30,14 @@ const BookSchema = new mongoose.Schema({
   pages: {
     type: Number
   },
+  approved: {
+    type: Boolean,
+    default: false
+  },
+  content_type: {
+    type: String,
+    default: null
+  },
   updated_date: {
     type: Date,
     default: Date.now

@@ -33,6 +33,9 @@ const BookSchema = new mongoose.Schema({
   updated_date: {
     type: Date,
     default: Date.now
+  },
+  rating: {
+    type: Number
   }
 });
 

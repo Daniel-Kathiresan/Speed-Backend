@@ -38,6 +38,10 @@ const BookSchema = new mongoose.Schema({
     type: String,
     default: null
   },
+  se_practice: {
+    type: String,
+    default: null
+  },
   updated_date: {
     type: Date,
     default: Date.now

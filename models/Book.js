@@ -36,6 +36,9 @@ const BookSchema = new mongoose.Schema({
   },
   rating: {
     type: Number
+  },
+  clickrate: {
+    type: Number,
   }
 });
 

@@ -38,6 +38,14 @@ const BookSchema = new mongoose.Schema({
     type: String,
     default: null
   },
+  rating: {
+    type: Number,
+    default: 0
+  },
+  numRatings: {
+    type: Number,
+    default: 0
+  },
   updated_date: {
     type: Date,
     default: Date.now
